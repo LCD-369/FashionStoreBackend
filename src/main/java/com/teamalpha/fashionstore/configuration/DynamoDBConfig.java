@@ -38,10 +38,10 @@ public class DynamoDBConfig {
 	
 	private static final Logger LOGGER =  Logger.getLogger(DynamoDBConfig.class.getName()); 
 	
-	@Value("AWS_ACCESS_KEY_ID")
+	@Value("${AWS_ACCESS_KEY_ID}")
 	private String amazonAWSAccessKey;
 	
-	@Value("AWS_SECRET_ACCESS_KEY")
+	@Value("${AWS_SECRET_ACCESS_KEY}")
 	private String amazonAWSSecretKey;
 
 	public AWSCredentialsProvider amazonAWSCredentialsProvider() {
